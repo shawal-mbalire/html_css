@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calc_body">
+        <div id="calc_head">
+            <div>calc</div>
+            <div>theme</div>
+            <div>123</div>
+        </div>
+
+        <div id="calc_answer">
+
+            <div id="calc_input">
+            </div>
+
+            <div id="calc_answer_text">0</div>
+        </div>
+
+        <div id="calc_buttons" class="container ">
+            <!-- divs for rows -->
+            <div class="numrow">
+                <button type="button" id = "7"
+                onclick="
+                input.push(7);
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">7</button>
+                <button type="button"onclick="
+                input.push(8);
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">8</button>
+                <button type="button"onclick="
+                input.push(9);
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">9</button>
+                <button type="button"onclick="
+                input.pop(7);
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">Del</button>
+            </div>
+            <div class="numrow">
+                <button type="button"onclick="
+                input.push(4);
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">4</button>
+                <button type="button"onclick="
+                input.push(5);
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">5</button>
+                <button type="button"onclick="
+                input.push(6);
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">6</button>
+                <button type="button"onclick="
+                input.push('+');
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">+</button>
+            </div>
+            <div class="numrow">
+                <button type="button"onclick="
+                input.push(2);
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">1</button>
+                <button type="button"onclick="
+                input.push(2);
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">2</button>
+                <button type="button"onclick="
+                input.push(3);
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">3</button>
+                <button type="button"onclick="
+                input.push('-');
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">-</button>
+            </div>
+            <div class="numrow">
+                <button type="button"onclick="
+                input.push('.');
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">.</button>
+                <button type="button"onclick="
+                input.push(0);
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">0</button>
+                <button type="button"onclick="
+                input.push('/');
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">/</button>
+                <button type="button"onclick="
+                input.push('*');
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">*</button>
+            </div>
+            <div class="numrow">
+                <button style="width: 50%;
+                " type="button"onclick="
+                input=[];
+                document.getElementById('calc_input').innerHTML=input.join('');
+                ">Reset</button>
+                <button style="width: 40%" type="button"
+                onclick="
+                document.getElementById('calc_answer_text').innerHTML=output.join('');
+                ">Equals</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
